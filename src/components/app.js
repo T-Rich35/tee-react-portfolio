@@ -1,11 +1,23 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+import React from "react";
+import Topbar from "../components/topbar/Topbar";
+import Home from "../components/home/Home";
+import About from "../components/about/About";
+import Projects from "../components/portjects/Portjects";
+import Contact from "../components/contact/Contact";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="app">
-        <h1>Tee's Portfolio</h1>
+function App() {
+  return (
+    <div className="app">
+      <Topbar />
+      <div className="sections">
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+export default App;
