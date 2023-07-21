@@ -1,7 +1,7 @@
 // import React, { Component } from "react";
 import React from "react";
 import Topbar from "../components/topbar/Topbar";
-import Home from "../components/home/Home";
+import Intro from "../components/intro/Intro";
 import About from "../components/about/About";
 import Projects from "../components/portjects/Portjects";
 import Contact from "../components/contact/Contact";
@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       <Topbar />
       <div className="sections">
-        <Home />
+        <Intro />
         <About />
         <Projects />
         <Contact />
