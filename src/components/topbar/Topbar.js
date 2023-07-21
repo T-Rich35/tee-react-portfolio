@@ -14,7 +14,13 @@ export default function Topbar() {
             <span>richistee@gmail.com</span>
           </div>
         </div>
-        <div className="right">right side of page</div>
+        <div className="right">
+          <div className="hamburger">
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </div>
       </div>
     </div>
   );
