@@ -1,7 +1,17 @@
 import React from "react";
-import { ExpandMore } from "@material-ui/icons";
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 
 export default function intro() {
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      strings: ["Full-Stack Developer"],
+    });
+  });
+
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -13,10 +23,13 @@ export default function intro() {
         <div className="wrapper">
           <h2>Hi, I'm</h2>
           <h1>Tarrance </h1>
-          <span></span>
+          <h3>
+            {/* Freelance */}
+            <span ref={textRef}> </span>
+          </h3>
         </div>
-        <a href="projects">
-          <ExpandMore className="down" />
+        <a href="#projects">
+          <img src="assets/Down.png" />
         </a>
       </div>
     </div>

@@ -42,6 +42,11 @@
       }
       h3 {
         font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
       }
     }
     a {
@@ -49,9 +54,15 @@
       bottom: 10px;
       left: 40%;
 
-      .down {
+      img {
         width: 30px;
         animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
       }
     }
   }
