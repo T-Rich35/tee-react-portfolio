@@ -7,8 +7,10 @@ export default function intro() {
 
   useEffect(() => {
     init(textRef.current, {
-      showCursor: false,
-      strings: ["Full-Stack Developer"],
+      showCursor: true,
+      backDelay: 1500,
+      backSpeed: 60,
+      strings: ["A Passionate Full-Stack Developer"],
     });
   });
 
