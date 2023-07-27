@@ -18,6 +18,42 @@ export default function Portjects() {
           />
           <h3>Banking App</h3>
         </div>
+        <div className="item">
+          <img
+            src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf4CEpg1wItoNcHURgrY14zg7vlXDyBKr4w&usqp=CAU"
+            alt=""
+          />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img
+            src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf4CEpg1wItoNcHURgrY14zg7vlXDyBKr4w&usqp=CAU"
+            alt=""
+          />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img
+            src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf4CEpg1wItoNcHURgrY14zg7vlXDyBKr4w&usqp=CAU"
+            alt=""
+          />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img
+            src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf4CEpg1wItoNcHURgrY14zg7vlXDyBKr4w&usqp=CAU"
+            alt=""
+          />
+          <h3>Banking App</h3>
+          <p>A simple React</p>
+        </div>
+        <div className="item">
+          <img
+            src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf4CEpg1wItoNcHURgrY14zg7vlXDyBKr4w&usqp=CAU"
+            alt=""
+          />
+          <h3>Banking App</h3>
+        </div>
       </div>
     </div>
   );
