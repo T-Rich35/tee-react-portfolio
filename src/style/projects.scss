@@ -30,17 +30,20 @@
     }
   }
 
-  .firstRow {
+  .firstRow,
+  .secondRow {
     height: 50%;
     margin-left: -30px;
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 
-    .item1 {
-      width: 60%;
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+      width: 50%;
       height: 87%;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
