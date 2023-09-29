@@ -1,3 +1,23 @@
 .about {
   background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px 25px 75px;
+
+  .aboutMeBio {
+    flex: 0.5;
+
+    p {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .aboutMeImg {
+    flex: 0.5;
+  }
 }
