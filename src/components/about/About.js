@@ -12,7 +12,10 @@ export default function About() {
           Assocaite Degree in Computer Technology.
         </p>
 
-        <p> my school </p>
+        <p>
+          Other than coding, I spend most of my free time with family and
+          reading a good book
+        </p>
       </div>
 
       <div className="aboutMeImg">Picture of me</div>
