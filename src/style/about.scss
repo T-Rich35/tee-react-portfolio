@@ -2,10 +2,9 @@
 
 .about {
   background-color: lightgreen;
-  min-height: 500px;
   height: 80%;
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
   align-items: center;
   padding: 25px 25px 25px 80px;
 
@@ -34,7 +33,7 @@
     color: crimson;
   }
   .aboutMeImg {
-    display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -47,16 +46,34 @@
     width: 35%;
     object-fit: cover;
     position: relative;
+    padding: 25px 25px 25px 150px;
   }
 
   .i-bg {
-    clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     background-color: $maincolor;
-    width: 46%;
-    height: 100%;
+    width: 64%;
+    height: 80%;
     position: absolute;
     top: 4;
     right: 0;
     object-fit: contain;
   }
+
+  .tool {
+    flex: 1;
+    height: 38%;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: crimson;
+    position: relative;
+    margin: 0;
+  }
+}
+
+.skills {
+  display: flex;
+  align-items: center;
 }

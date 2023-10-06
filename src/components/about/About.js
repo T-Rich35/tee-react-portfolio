@@ -1,5 +1,6 @@
 import React from "react";
 import Crop from "../../../static/assets/crop.png";
+import Css from "../../../static/assets/css.png";
 
 export default function About() {
   return (
@@ -22,6 +23,16 @@ export default function About() {
       <div className="aboutMeImg">
         <div className="i-bg"></div>
         <img src={Crop} alt=""></img>
+      </div>
+
+      <div className="tool">
+        {" "}
+        <h2>My Toolkit 💻</h2>
+        <ul className="skills">
+          <li>hello</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
       </div>
     </div>
   );
