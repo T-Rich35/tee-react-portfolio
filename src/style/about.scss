@@ -2,11 +2,10 @@
 
 .about {
   background-color: lightgreen;
-  height: 80%;
+  height: 100vh;
   display: flex;
-  // justify-content: space-around;
   align-items: center;
-  padding: 25px 25px 25px 80px;
+  padding: 25px 25px 25px 70px;
 
   .me {
     font-size: 3rem;
@@ -34,25 +33,32 @@
   }
   .aboutMeImg {
     flex: 1;
-    flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 60%;
-    margin: 0 auto;
   }
 
-  img {
-    height: 35%;
-    width: 35%;
+  .m-img {
+    height: 25%;
+    width: 25%;
     object-fit: cover;
     position: relative;
-    padding: 25px 25px 25px 150px;
+    padding-right: 75px;
   }
 
   .i-bg {
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(
+      40% 0%,
+      40% 20%,
+      100% 20%,
+      100% 80%,
+      40% 80%,
+      40% 100%,
+      0% 50%
+    );
     background-color: $maincolor;
-    width: 64%;
+    width: 50%;
     height: 80%;
     position: absolute;
     top: 4;
@@ -61,19 +67,44 @@
   }
 
   .tool {
-    flex: 1;
-    height: 38%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 45%;
+    width: 65%;
+    position: relative;
   }
 
-  h2 {
+  .m-tool {
+    text-align: center;
     font-size: 3rem;
     color: crimson;
     position: relative;
+    padding-top: 79px;
+    padding-left: 35px;
+    padding-bottom: 15px;
     margin: 0;
   }
-}
 
-.skills {
-  display: flex;
-  align-items: center;
+  .skills {
+    color: #696969;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex-basis: 27%;
+      padding: 20px 0;
+      // width: 80px;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+      }
+    }
+  }
 }
