@@ -1,3 +1,15 @@
 .contact {
   background-color: lightblue;
+
+  .c-wrapper {
+    padding: 50px;
+    display: flex;
+  }
+
+  .c-info {
+    flex: 1;
+  }
+  .c-form {
+    flex: 1;
+  }
 }
