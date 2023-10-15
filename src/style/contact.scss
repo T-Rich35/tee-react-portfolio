@@ -12,4 +12,16 @@
   .c-form {
     flex: 1;
   }
+
+  .socialIcons {
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    .fa {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import { LinkedInIcon } from "@material-ui/icons";
+import Link from "../../../static/assets/link.png";
+import Gith from "../../../static/assets/gith.png";
 
 export default function Contact() {
   return (
@@ -12,7 +13,18 @@ export default function Contact() {
             media or you can send me a message here!
           </p>
 
-          <div className="socialIcons"></div>
+          <ul className="socialIcons">
+            <li>
+              <a href="#" target="">
+                <img src={Link} alt="" className="fa"></img>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="">
+                <img src={Gith} alt="" className="fa"></img>
+              </a>
+            </li>
+          </ul>
         </div>
         <div className="c-form"></div>
       </div>
