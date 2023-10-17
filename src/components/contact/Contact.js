@@ -14,12 +14,12 @@ export default function Contact() {
         <ul className="socialIcons">
           <li>
             <a href="#" target="">
-              <GitHub />
+              <GitHub className="icons" />
             </a>
           </li>
           <li>
             <a href="#" target="">
-              <LinkedIn />
+              <LinkedIn className="icons" />
             </a>
           </li>
         </ul>
@@ -28,7 +28,7 @@ export default function Contact() {
         <form>
           <input type="text" placeholder="Name" className="n" />
           <input type="text" placeholder="Email" className="e" />
-          <textarea placeholder="Message"></textarea>
+          <textarea rows="5" placeholder="Message"></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
