@@ -1,6 +1,12 @@
+@import "../style/global.scss";
+
 .contact {
   background-color: lightblue;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   .c-info {
     flex: 1;
@@ -102,5 +108,9 @@
       font-weight: 500;
       color: blue;
     }
+  }
+
+  span {
+    color: green;
   }
 }

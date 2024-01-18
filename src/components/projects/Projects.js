@@ -4,12 +4,7 @@ export default function Porjects() {
   return (
     <div className="projects" id="projects">
       <p className="pro">hover over projects to learn more</p>
-      <ul>
-        {/* <li className="active">Featured</li>
-        <li>Blog</li>
-        <li>Appointment App</li>
-        <li>Fries </li> */}
-      </ul>
+      <ul></ul>
       <div className="firstRow">
         <div className="item1">
           <img

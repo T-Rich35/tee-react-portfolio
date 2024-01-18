@@ -7,6 +7,9 @@
   align-items: center;
   padding: 25px 25px 25px 70px;
 
+  @include mobile {
+    flex-direction: column;
+  }
   .me {
     font-size: 3rem;
     color: crimson;
@@ -25,6 +28,11 @@
     .top {
       margin: 20px 0px;
     }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   a {
@@ -37,6 +45,11 @@
     align-items: center;
     justify-content: center;
     width: 60%;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   .m-img {
@@ -64,6 +77,10 @@
     top: 4;
     right: 0;
     object-fit: contain;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .tool {
@@ -72,6 +89,10 @@
     height: 45%;
     width: 65%;
     position: relative;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .m-tool {

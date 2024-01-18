@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { GitHub, LinkedIn } from "@material-ui/icons";
 
 export default function Contact() {
+  const [message, setMessage] = useState(false);
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessage(true);
+  };
   return (
     <div className="contact">
       <div className="c-info">
@@ -25,11 +32,22 @@ export default function Contact() {
         </ul>
       </div>
       <div className="c-form">
-        <form>
-          <input type="text" placeholder="Name" className="n" />
-          <input type="text" placeholder="Email" className="e" />
-          <textarea rows="5" placeholder="Message"></textarea>
+        <form ref={formRef} onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            name="user_name"
+            className="n"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            name="user_email"
+            className="e"
+          />
+          <textarea rows="5" placeholder="Message" name="message"></textarea>
           <button type="submit">Send Message</button>
+          {message && <span>Thanks, I'll reply ASAP </span>}
         </form>
       </div>
     </div>

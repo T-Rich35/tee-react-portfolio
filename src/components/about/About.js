@@ -60,12 +60,6 @@ export default function About() {
               <img className="icon" src={Gith} alt=""></img>
               Github
             </li>
-            {/* <li>SASS</li> */}
-            {/* <li>Javascript</li> */}
-            {/* <li>jQuery</li> */}
-            {/* <li>React</li> */}
-            {/* <li>Python</li> */}
-            {/* <li>Github</li> */}
           </ul>
         </div>
       </div>
