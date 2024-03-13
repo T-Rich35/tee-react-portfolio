@@ -14,8 +14,8 @@ export default function Contact() {
       <div className="c-info">
         <h1 className="title">Let's Connect!</h1>
         <p>
-          Just want to have a quick chat you can find me <br></br> on social
-          media or you can send me a message here!
+          Just want to have a quick chat you can find me on social media or you
+          can send me a message here!
         </p>
 
         <ul className="socialIcons">

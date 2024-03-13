@@ -1,0 +1,48 @@
+.tool {
+  background-color: goldenrod;
+
+  .tool {
+    display: flex;
+    flex-wrap: wrap;
+    height: 45%;
+    width: 65%;
+    position: relative;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .m-tool {
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    padding-top: 79px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto 60px auto;
+    padding: 20px 0;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex-basis: 27%;
+      padding: 20px 0;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

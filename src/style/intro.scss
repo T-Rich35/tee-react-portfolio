@@ -21,7 +21,7 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      float: left;
+      float: right;
 
       @include mobile {
         align-items: flex-start;
@@ -31,7 +31,7 @@
         height: 90%;
 
         @include mobile {
-          height: 60%;
+          height: 55%;
         }
       }
     }

@@ -15,7 +15,8 @@
   transition: all 1s ease;
 
   &.active {
-    right: 0;
+    width: 125%;
+    height: 100vh;
   }
 
   ul {
