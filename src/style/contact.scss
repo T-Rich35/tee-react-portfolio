@@ -1,7 +1,7 @@
 @import "../style/global.scss";
 
 .contact {
-  background-color: lightblue;
+  background-color: $backcolor;
   display: flex;
 
   @include mobile {
@@ -20,7 +20,7 @@
   }
 
   .title {
-    color: crimson;
+    color: $maincolor;
     font-size: 3rem;
     padding: 0;
     margin: 0;
@@ -30,6 +30,8 @@
     font-size: 1.6rem;
     padding: 20px;
     line-height: 1.6;
+    color: #061a40;
+    text-align: center;
   }
   .c-form {
     flex: 1;
@@ -52,11 +54,11 @@
     }
 
     a {
-      color: crimson;
+      color: $maincolor;
 
       &:hover {
         font-weight: 500;
-        color: blue;
+        color: darkblue;
       }
     }
   }
@@ -81,6 +83,9 @@
     margin: 10px 0px;
     padding-left: 10px;
     font-size: 14px;
+    border: 2px solid $maincolor;
+    border-radius: 5px;
+    background-color: $backcolor;
   }
 
   textarea {
@@ -89,10 +94,11 @@
     margin: 10px 0px;
     padding-left: 10px;
     font-size: 14px;
-    border: 2px;
+    border: 2px solid $maincolor;
     border-radius: 5px;
     resize: none;
     overflow: hidden;
+    background-color: $backcolor;
   }
 
   button {
@@ -107,7 +113,7 @@
 
     &:hover {
       font-weight: 500;
-      color: blue;
+      color: $maincolor;
     }
   }
 

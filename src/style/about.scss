@@ -1,7 +1,7 @@
 @import "../style/global.scss";
 
 .about {
-  background-color: lightgreen;
+  background-color: #e8dbc5;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
   }
   .me {
     font-size: 50px;
-    color: crimson;
+    color: $maincolor;
     margin: 0;
 
     @include mobile {
@@ -28,7 +28,7 @@
 
     p {
       font-size: 1.8rem;
-      color: #696969;
+      color: #061a40;
       line-height: 1.6;
 
       @include mobile {
@@ -52,7 +52,7 @@
 
   a {
     text-decoration: none;
-    color: crimson;
+    color: $maincolor;
   }
   .aboutMeImg {
     flex: 1;
