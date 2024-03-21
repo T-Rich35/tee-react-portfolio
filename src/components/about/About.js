@@ -9,9 +9,11 @@ export default function About() {
 
         <p className="top">
           Thanks for scrolling this far. I am a Full-Stack graduate from
-          <a href="#"> Bottega University</a> Also from{" "}
-          <a href="#">Remintgon College </a> with a Associate Degree in Computer
-          Technology.
+          <a href="https://bottega.edu/full-stack-development-certificate/">
+            Bottega University
+          </a>
+          Also from <a href="#">Remintgon College </a> with a Associate Degree
+          in Computer Technology.
         </p>
 
         <p className="bot">

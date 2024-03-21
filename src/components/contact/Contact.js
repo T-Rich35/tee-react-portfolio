@@ -1,55 +1,82 @@
 import React, { useRef, useState } from "react";
-import { GitHub, LinkedIn } from "@material-ui/icons";
+import { Email, LinkedIn } from "@material-ui/icons";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
-  const formRef = useRef();
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setMessage(true);
+    // console.log("SUCCESS!");
+
+    // emailjs
+    //   .send("service_podb0lj", "template_s4etgwb", e.target, {
+    //     publicKey: "pwVuQwLNINYIgDM-r",
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //       setMessage(true);
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
+    // e.target.reset();
   };
   return (
     <div className="contact">
       <div className="c-info">
         <h1 className="title">Let's Connect!</h1>
-        <p>
-          Just want to have a quick chat you can find me on social media or you
-          can send me a message here!
-        </p>
+        <p>Your Best Candidate For Web Development.</p>
 
         <ul className="socialIcons">
           <li>
-            <a href="#" target="">
-              <GitHub className="icons" />
-            </a>
+            <button type="submit">
+              <a href="mailto:25teerich@gmail.com" target="">
+                <Email className="icons" />
+              </a>
+            </button>
           </li>
           <li>
-            <a href="#" target="">
-              <LinkedIn className="icons" />
-            </a>
+            <button type="submit">
+              <a
+                href="https://www.linkedin.com/in/tarrance-richardson/"
+                target="#"
+              >
+                <LinkedIn className="icons" />
+              </a>
+            </button>
           </li>
         </ul>
       </div>
-      <div className="c-form">
-        <form ref={formRef} onSubmit={handleSubmit}>
+      {/* <div className="c-form">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             placeholder="Name"
+            required
             name="user_name"
             className="n"
           />
           <input
             type="text"
             placeholder="Email"
+            required
             name="user_email"
             className="e"
           />
-          <textarea rows="5" placeholder="Message" name="message"></textarea>
-          <button type="submit">Send Message</button>
+          <textarea
+            rows="5"
+            placeholder="Message"
+            required
+            name="message"
+          ></textarea>
+          
+
           {message && <span>Thanks, I'll reply ASAP </span>}
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }
