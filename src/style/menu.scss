@@ -15,8 +15,9 @@
   transition: all 1s ease;
 
   &.active {
-    width: 125%;
-    height: 100vh;
+    right: 0;
+    // width: 125%;
+    // height: 100vh;
 
     @include mobile {
       width: 100vh;

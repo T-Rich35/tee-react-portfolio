@@ -28,7 +28,7 @@ export default function Contact() {
     <div className="contact">
       <div className="c-info">
         <h1 className="title">Let's Connect!</h1>
-        <p>Your Best Candidate For Web Development.</p>
+        <p>Your Best Candidate For Software Development.</p>
 
         <ul className="socialIcons">
           <li>
